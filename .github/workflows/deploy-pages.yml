@@ -78,6 +78,7 @@ jobs:
         env:
           NEXT_PUBLIC_SITE_URL: https://${{ vars.SITE_DOMAIN }}${{ vars.PAGES_BASE_PATH }}
           NEXT_PUBLIC_FORM_API_URL: ${{ vars.FORM_API_URL }}
+          NEXT_PUBLIC_FORM_API_SHORT: ${{ vars.FORM_API_SHORT }}
           # Tenant slug — baked into the static build so client-side form
           # components address the multi-tenant submission endpoint:
           #   POST <FORM_API_URL>/api/forms/<TENANT_SLUG>/<formId>
